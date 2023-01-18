@@ -32,5 +32,19 @@ I figured there where a few ways to setup a link. My intention is/was to use GRE
 
 The first challenge i had to overcome was mainly the LTE part. LTE and/or 4G connections regularly use CGNat to provide internet connectivity. Also in my case using the USB modem. This means the usb modem (in passthrough) via a Mikrotik router hands out a RFC1918 address to pfSense, which i cannot use thus for setting up a GRE tunnel. The GRE tunnel requires to have a public ip outbound, and an inbound IP which is direct attached. 
 
-<img src="https://imgur.com/a/3vtqfUQ " /> 
+<img src="https://imgur.com/a/3vtqfUQ.jpg " /> 
+
+To mitigate this issue, still want to use GRE for both the fiber and the LTE connection, i used an outbound VPN setup to create an another layer. 
+
+For this i setup an OpenVPN server on the datacenter firewall which allows for incoming connections from my home firewall. This way i can create a virtual tunnel on which on top i can run my GRE tunnel and routing. 
+
+## Final setup
+
+After creating the tunnels i ended up with the following design which allowed me to run the whole show and route the IPs accordingly
+
+<img src="https://imgur.com/Ygb8Fbq.jpg " /> 
+
+## Backlog 
+
+The way i now route IP's is of course not fully redundant. In the future, theres an issue with a sw package on the firewall in the datacenter. Im aiming to setup a full OSPF VPN multi wan concept where i can route ip's based on the link availability. This will be done with OpenVPN pfSense and the FRR package.
 
