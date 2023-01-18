@@ -32,7 +32,7 @@ I figured there where a few ways to setup a link. My intention is/was to use GRE
 
 The first challenge i had to overcome was mainly the LTE part. LTE and/or 4G connections regularly use CGNat to provide internet connectivity. Also in my case using the USB modem. This means the usb modem (in passthrough) via a Mikrotik router hands out a RFC1918 address to pfSense, which i cannot use thus for setting up a GRE tunnel. The GRE tunnel requires to have a public ip outbound, and an inbound IP which is direct attached. 
 
-<img src="https://imgur.com/3vtqfUQ.jpg" />
+<img src="https://imgur.com/0WMF3KT.jpg" />
 
 To mitigate this issue, still want to use GRE for both the fiber and the LTE connection, i used an outbound VPN setup to create an another layer. 
 
