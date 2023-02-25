@@ -13,7 +13,7 @@ AS16278:
     import: AS16278:AS-SENTIALABS
     export: AS200132:AS-NETONE-NL
 
-AS34468:
+AS34465:
     description: Ncryptd
     import: AS34465:AS-NCRYPTD
     export: AS200132:AS-NETONE-NL
