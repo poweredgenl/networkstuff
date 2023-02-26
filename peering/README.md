@@ -1,6 +1,6 @@
 # Peering with AS200132
 
-If youre connected at the Frys IX and/or SPeed IX im able to peer with you if you'd like.
+If youre connected at the Frys IX and/or Speed-IX im able to peer with you if you'd like.
 
 ## Procedure
 
