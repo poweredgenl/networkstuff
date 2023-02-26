@@ -2,3 +2,8 @@ AS8283:
     description: Netwerkvereniging Coloclue
     import: AS8283:AS-COLOCLUE
     export: AS200132:AS-NETONE-NL
+    
+AS56393:
+    description: Frys-IX Route Servers
+    import: AS-FRYS-IX-CONNECTED
+    export: AS200132:AS-NETONE-NL
