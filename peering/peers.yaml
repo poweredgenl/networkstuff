@@ -1,9 +1,9 @@
-AS41441:
-    description: SPEED-IX route server peers
-    import: AS-IX
-    export: AS200132:AS-NETONE-NL
+#AS41441:
+#    description: SPEED-IX route server peers
+#    import: AS-IX
+#    export: AS200132:AS-NETONE-NL
 
-AS56393:
-    description: Frys-IX Route Servers
-    import: AS-FRYS-IX-CONNECTED
-    export: AS200132:AS-NETONE-NL
+#AS56393:
+#    description: Frys-IX Route Servers
+#    import: AS-FRYS-IX-CONNECTED
+#    export: AS200132:AS-NETONE-NL
