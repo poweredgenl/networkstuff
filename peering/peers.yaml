@@ -7,13 +7,3 @@ AS56393:
     description: Frys-IX Route Servers
     import: AS-FRYS-IX-CONNECTED
     export: AS200132:AS-NETONE-NL
-
-AS16278:
-    description: Sentia Labs
-    import: AS16278:AS-SENTIALABS
-    export: AS200132:AS-NETONE-NL
-
-AS34465:
-    description: Ncryptd
-    import: AS34465:AS-NCRYPTD
-    export: AS200132:AS-NETONE-NL
