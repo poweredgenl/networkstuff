@@ -18,7 +18,7 @@ AS6939:
     import: AS6939:AS-HURRICANE
     export: AS200132:AS-NETONE-NL
 
-AS56393:
+AS212635:
     description: AS212635
     import: AS212635:AS-212635
     export: AS200132:AS-NETONE-NL
