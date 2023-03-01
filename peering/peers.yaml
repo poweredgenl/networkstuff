@@ -23,7 +23,7 @@ AS56393:
     import: AS212635:AS-212635
     export: AS200132:AS-NETONE-NL
 
-AS13335:
-    description: Cloudflare
-    import: AS13335:AS-CLOUDFLARE
+AS212855:
+    description: AS212855
+    import: AS212855:AS-LUJE
     export: AS200132:AS-NETONE-NL
