@@ -8,6 +8,11 @@ AS56393:
     import: AS-FRYS-IX-CONNECTED
     export: AS200132:AS-NETONE-NL
 
+AS41441:
+    description: Speed-IX Route Servers
+    import: AS-IX
+    export: AS200132:AS-NETONE-NL
+
 AS202585:
     description: Nick Bouwhuis
     import: AS202585:AS-NICK
