@@ -1,3 +1,14 @@
+NOTE - This tool is provided as is. Its a fork of the official KEES tool from Coloclue. Tool was adjusted for my usage:
+================================================
+
+- 32 Bit ASN compatibility
+- Removed OSPF
+- Removed BFD
+- Removed IPV6 (for now)
+
+
+
+
 KEES - The Coloclue Network Automation Toolchain
 ================================================
 
