@@ -6,7 +6,7 @@ This readme describes all the specific network stuff im doing at the house or ab
 
 [ soon ! ]
 
-## Routing a /24 PI across the internet to my home
+## Routing a /24 PI across the internet to my home - UPDATE 04-03-2023 - this setup is decprecated as i have my own router. info TBC
 
 This readme is to document the setup of routing a /24 PI IP space towards my house via the internet
 
