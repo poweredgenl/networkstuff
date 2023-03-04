@@ -1,0 +1,17 @@
+---
+transit:
+  sample_transit_company:
+    name: Sample transit
+    as: 1234
+    tag: 10
+    graceful_shutdown: False
+    admin_down_state: False
+    block_importexport: False
+    sessions:
+      nikhef-1:
+        - ip4: 192.168.168.168
+          graceful_shutdown: False
+          admin_down_state: False
+          block_importexport: False
+          bgp_local_pref: 100
+

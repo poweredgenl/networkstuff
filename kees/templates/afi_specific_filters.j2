@@ -1,0 +1,126 @@
+{%- if afi == "ipv4" -%}
+{%- set maxlength = 32 -%}
+{%- elif afi == "ipv6" -%}
+{%- set maxlength = 128 -%}
+{%- endif -%}
+
+function is_netone_supernet()
+prefix set netone;
+{
+    netone = [
+{%-
+for item in netone.supernets 
+if (afi == "ipv4" and "." in item.prefix) or (afi == "ipv6" and ":" in item.prefix)
+%}
+        {{ item.prefix }}/{{ item.length }}
+{%- if not loop.last %},{% endif -%}
+{%- if item.comment %}  /* {{ item.comment }} */{% endif -%}
+{%- endfor %}
+    ];
+    if net ~ netone then return true;
+    return false;
+}
+
+function is_netone_more_specific()
+prefix set netone;
+{
+    netone = [
+{%-
+for item in netone.supernets
+if (afi == "ipv4" and "." in item.prefix) or (afi == "ipv6" and ":" in item.prefix)
+%}
+        {{ item.prefix }}/{{ item.length }}{{ "{" }}{{ item.length }},{{ maxlength }}{{ "}" }}
+{%- if not loop.last %},{% endif -%}
+{%- if item.comment %}  /* {{ item.comment }} */{% endif -%}
+{% endfor %}
+    ];
+    if net ~ netone then return true;
+    return false;
+}
+
+function is_netone_beacon()
+{
+    # Prefix must fall within one of our supernets, otherwise it cannot be a beacon.
+    if (!is_netone_more_specific()) then return false;
+
+{%-
+for item in netone.beacons
+if (afi == "ipv4" and "." in item.prefix) or (afi == "ipv6" and ":" in item.prefix)
+%}
+    if (net = {{ item.prefix }}/{{ item.length }}) then return true;
+{%- if item.comment %}  /* {{ item.comment }} */{% endif -%}
+{%- endfor %}
+    return false;
+}
+
+function is_bogon()
+prefix set bogons;
+{
+    bogons = [
+{%-
+for item in bogons
+if (afi == "ipv4" and "." in item.prefix) or (afi == "ipv6" and ":" in item.prefix)
+%}
+        {{ item.prefix }}/{{ item.length }}{{ "{" }}{{ item.length }},{{ maxlength }}{{ "}" }}
+{%- if not loop.last %},{% endif -%}
+{%- if item.comment %}  /* {{ item.comment }} */{% endif -%}
+{% endfor %}
+    ];
+    if net ~ bogons then return true;
+    return false;
+}
+
+function is_bogon_aspath()
+int set bogon_asns;
+{
+    bogon_asns = [0, 23456, 64496..131071, 4200000000..4294967295];
+    if (bgp_path ~ bogon_asns) then {
+        return true;
+    }
+    return false;
+}
+
+function is_acceptable_size()
+prefix set acceptable_sizes;
+{
+{%- if afi == "ipv4" %}
+    acceptable_sizes = [ 0.0.0.0/0{8,24} ];
+{%- elif afi == "ipv6" %}
+    acceptable_sizes = [ 2000::/3{12,48} ];
+{%- endif %}
+    if net ~ acceptable_sizes then return true;
+    return false;
+}
+
+{% if rpki.validation %}
+function reject_rpki_invalid()
+{
+    {% if rpki['whitelist'][afi] is not none -%}
+    if (net ~ rpkiwhitelist) then {
+        bgp_large_community.add((200132, 5, 4));
+        accept;
+    }
+    else {% endif %}if (roa_check(ROAS) = ROA_VALID) then {
+        /* add rfc8097 marker to routes for which a valid matching ROA exists */
+        bgp_large_community.add((200132, 5, 2));
+    }
+    else if (roa_check(ROAS) = ROA_INVALID) then {
+        print "Reject: RPKI ROA check failed for ", net, " ", bgp_path, " protocol: ", proto;
+        bgp_large_community.add((200132, rejected_route, r_rpki_invalid));
+        reject;
+    }
+}
+{% endif %}
+
+{%- if afi == "ipv4" -%}{%- set blackhole_network_length = 24 -%}
+{%- elif afi == "ipv6" -%}{%- set blackhole_network_length = 64 -%}
+{%- endif -%}
+function blackhole_export() {
+    if proto = "blackhole1" then {
+        if (net.len = {{ blackhole_network_length }} && is_netone_more_specific() ) then {
+            accept;
+        }
+        reject;
+    }
+    reject;
+}

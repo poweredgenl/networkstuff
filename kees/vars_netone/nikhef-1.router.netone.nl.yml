@@ -1,0 +1,17 @@
+hostname: "nikhef-1.router.netone.nl"
+shortname: "nikhef1"
+
+router_id: "195.95.177.1"
+
+# Example interfaces - removed my personal interfaces
+interfaces:
+  backbone:
+    - nic: "ens192"
+  external:
+    - nic: "lo"
+    - nic: "ens162"
+
+
+members_bgp_source:
+  default:
+    ipv4: "195.95.177.0"

@@ -1,8 +1,3 @@
-Note:
-
-This readme is forked from Coloclue/Kees. The tool was adjusted for me to work by the team of coloclue to help with my 32Bit ASN. Tool is supplied as is. 
-For support go to ircnet #frys-ix and ask Cybertinus or the Coloclue team. Information and scripts provided as is.
-
 KEES - The Coloclue Network Automation Toolchain
 ================================================
 
@@ -40,45 +35,45 @@ Repository layout:
 	├── LICENSE
 	├── README
 	├── blobs
-	│   ├── dcg-1.router.nl.coloclue.net
-	│   │   ├── bird.conf                  <- Static config for bird (IPv4 definition on the routers)
-	│   │   ├── bird6.conf                 <- Static config for bird6 (IPv6 definition on the routers)
-	│   │   ├── peerings                   <- Filled by peering_filters 
-	│   │   └── rpki                       <- Filled by rtrsub
-	│   ├── dcg-2.router.nl.coloclue.net
-	│   │   ├── bird.conf
-	│   │   ├── bird6.conf
-	│   │   ├── peerings
-	│   │   └── rpki
-	│   ├── eunetworks-2.router.nl.coloclue.net
-	│   │   ├── bird.conf
-	│   │   ├── bird6.conf
-	│   │   ├── blackholes                 <- Specific annoucements to mitigate DDoSses is placed here automatically
-	│   │   ├── peerings
-	│   │   └── rpki
-	│   └── eunetworks-3.router.nl.coloclue.net
-	│       ├── bird.conf
-	│       ├── bird6.conf
-	│       ├── peerings
-	│       └── rpki
+	│   ├── dcg-1.router.nl.coloclue.net
+	│   │   ├── bird.conf                  <- Static config for bird (IPv4 definition on the routers)
+	│   │   ├── bird6.conf                 <- Static config for bird6 (IPv6 definition on the routers)
+	│   │   ├── peerings                   <- Filled by peering_filters 
+	│   │   └── rpki                       <- Filled by rtrsub
+	│   ├── dcg-2.router.nl.coloclue.net
+	│   │   ├── bird.conf
+	│   │   ├── bird6.conf
+	│   │   ├── peerings
+	│   │   └── rpki
+	│   ├── eunetworks-2.router.nl.coloclue.net
+	│   │   ├── bird.conf
+	│   │   ├── bird6.conf
+	│   │   ├── blackholes                 <- Specific annoucements to mitigate DDoSses is placed here automatically
+	│   │   ├── peerings
+	│   │   └── rpki
+	│   └── eunetworks-3.router.nl.coloclue.net
+	│       ├── bird.conf
+	│       ├── bird6.conf
+	│       ├── peerings
+	│       └── rpki
 	├── generate-peer-config.sh            <- Generates all the filters for the peers
 	├── gentool                            <- A YAML to Jinja2 template generator
 	├── peering_filters                    <- creates IRR filters & IXP peering configs
 	├── templates
-	│   ├── afi_specific_filters.j2        <- Filters where the AFI is relevant
-	│   ├── ebgp_state.j2                  <- State of the eBGP sessions, toggled by the maintenance-mode setting
-	│   ├── envvars.j2                     <- UID and GID to run the Bird process as
-	│   ├── filter.j2                      <- Filter for peers
-	│   ├── generic_filters.j2             <- Global filters where the AFI is irrelevant
-	│   ├── header.j2                      <- File where all the generated files are included
-	│   ├── ibgp.j2                        <- Template for the iBGP sessions
-	│   ├── interfaces.j2                  <- Interfaces used by Bird (for instance to announce OSPF hello's on)
-	│   ├── members_bgp.j2                 <- template for BGP sessions to members
-	│   ├── ospf.j2                        <- OSPF definition
-	│   ├── peer.j2                        <- Template for the BGP sessions definition to peers
-	│   ├── rpkiwhitelist.j2               <- Template for RPKI whitelisted prefixes
-	│   ├── static_routes.j2               <- Template for static routes (we use this for static routes towards members)
-	│   └── transit.j2                     <- Template in which the BGP sessions towards our transits are defined
+	│   ├── afi_specific_filters.j2        <- Filters where the AFI is relevant
+	│   ├── ebgp_state.j2                  <- State of the eBGP sessions, toggled by the maintenance-mode setting
+	│   ├── envvars.j2                     <- UID and GID to run the Bird process as
+	│   ├── filter.j2                      <- Filter for peers
+	│   ├── generic_filters.j2             <- Global filters where the AFI is irrelevant
+	│   ├── header.j2                      <- File where all the generated files are included
+	│   ├── ibgp.j2                        <- Template for the iBGP sessions
+	│   ├── interfaces.j2                  <- Interfaces used by Bird (for instance to announce OSPF hello's on)
+	│   ├── members_bgp.j2                 <- template for BGP sessions to members
+	│   ├── ospf.j2                        <- OSPF definition
+	│   ├── peer.j2                        <- Template for the BGP sessions definition to peers
+	│   ├── rpkiwhitelist.j2               <- Template for RPKI whitelisted prefixes
+	│   ├── static_routes.j2               <- Template for static routes (we use this for static routes towards members)
+	│   └── transit.j2                     <- Template in which the BGP sessions towards our transits are defined
 	├── update-routers.sh
 	└── vars
 	    ├── dcg-1.router.nl.coloclue.net.yml

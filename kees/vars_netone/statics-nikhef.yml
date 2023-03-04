@@ -1,0 +1,7 @@
+statics:
+  - route: "195.95.177.128/25"
+    via: "195.95.177.2"
+  - route: "195.95.177.24/29"
+    via: "195.95.177.2"
+
+# Removed my internal routes
