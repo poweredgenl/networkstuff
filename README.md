@@ -6,7 +6,7 @@ This readme describes all the specific network stuff im doing at the house or ab
 
 [ soon ! ]
 
-## Routing a /24 PI across the internet to my home - UPDATE 04-03-2023 - this setup is decprecated as i have my own router. info TBC
+## Routing a /24 PI for home usage 
 
 This readme is to document the setup of routing a /24 PI IP space towards my house via the internet
 
@@ -22,9 +22,14 @@ At home i have the availability of 2 different ISP's and internet feeds.
 ### Goal
 
 - Use the /24 PI space at home with full control of handing out IP's without (double) NATting ports and interfaces.
-- Use both internet feeds as possibility to assign public IP's to both of them, depending on the entrypoint. Eg use some of the IP's on the fiber connection, other ones at the LTE connection
+- Use both internet feeds as possibility to assign public IP's to both of them, depending on the entrypoint. Eg use some of the IP's on the fiber connection, other ones at the LTE connection.
+- Use of my own router in the DFZ to make use of the IP space
 
-### Intended setup
+### New setup 10-03-2023
+
+Soon!
+
+### Old setup 01-06-2022 - static routes and firewall from a friend
 
 I figured there where a few ways to setup a link. My intention is/was to use GRE tunnels across the internet to an another firewall where the IP's where originally routed to. A friend supplied me with access and has taken care of the BGP announcements and routing towards that firewal. That part is thus covered.
 
@@ -38,13 +43,11 @@ To mitigate this issue, still want to use GRE for both the fiber and the LTE con
 
 For this i setup an OpenVPN server on the datacenter firewall which allows for incoming connections from my home firewall. This way i can create a virtual tunnel on which on top i can run my GRE tunnel and routing. 
 
-## Final setup
+## Final design
 
 After creating the tunnels i ended up with the following design which allowed me to run the whole show and route the IPs accordingly
 
 <img src="https://imgur.com/Ygb8Fbq.jpg " /> 
 
-## Backlog 
 
-The way i now route IP's is of course not fully redundant. In the future, theres an issue with a sw package on the firewall in the datacenter. Im aiming to setup a full OSPF VPN multi wan concept where i can route ip's based on the link availability. This will be done with OpenVPN pfSense and the FRR package.
 
