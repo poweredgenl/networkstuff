@@ -37,3 +37,8 @@ AS13335:
     description: Cloudflare
     import: AS-CLOUDFLARE
     export: AS200132:AS-NETONE-NL
+    
+AS15169:
+    description: Google
+    import: AS-GOOGLE
+    export: AS200132:AS-NETONE-NL
