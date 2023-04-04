@@ -32,7 +32,10 @@ AS41441:
     description: Speed-IX Route Servers
     import: AS-IX
     export: AS200132:AS-NETONE-NL
-    
+    only_with:
+       - 185.1.222.255
+       - 185.1.223.0    
+  
 AS13335:
     description: Cloudflare
     import: AS-CLOUDFLARE
