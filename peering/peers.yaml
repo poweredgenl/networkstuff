@@ -47,4 +47,9 @@ AS15169:
     export: AS200132:AS-NETONE-NL
     not_on:
       - frysix
+      
+AS1103:
+    description: SURF
+    import: AS-SURFNET
+    export: AS200132:AS-NETONE-NL
 
