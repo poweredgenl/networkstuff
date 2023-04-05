@@ -19,12 +19,12 @@ AS6939:
     export: AS200132:AS-NETONE-NL
 
 AS212635:
-    description: AS212635
+    description: Jurrian van Iersel
     import: AS212635:AS-212635
     export: AS200132:AS-NETONE-NL
 
 AS212855:
-    description: AS212855
+    description: Jelle Luteijn
     import: AS212855:AS-LUJE
     export: AS200132:AS-NETONE-NL
 
@@ -42,7 +42,7 @@ AS13335:
     export: AS200132:AS-NETONE-NL
     
 AS15169:
-    description: Google
+    description: Google 
     import: AS-GOOGLE
     export: AS200132:AS-NETONE-NL
     not_on:
@@ -56,5 +56,15 @@ AS1103:
 AS24940:
     description: Hetzner
     import: AS-HETZNER
+    export: AS200132:AS-NETONE-NL
+    
+AS206238:
+    description: Freedom Internet
+    import: AS-FREEDOM
+    export: AS200132:AS-NETONE-NL
+    
+AS211588:
+    description: Xyphen IT
+    import: AS211588:AS-XYPHEN
     export: AS200132:AS-NETONE-NL
 
