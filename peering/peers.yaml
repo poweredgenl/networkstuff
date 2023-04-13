@@ -66,3 +66,8 @@ AS211588:
     import: AS211588:AS-XYPHEN
     export: AS200132:AS-NETONE-NL
 
+AS16276:
+    description: OVHcloud
+    import: AS16276:AS-OVH
+    export: AS200132:AS-NETONE-NL
+
