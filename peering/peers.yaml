@@ -34,7 +34,9 @@ AS41441:
     export: AS200132:AS-NETONE-NL
     only_with:
        - 185.1.222.255
-       - 185.1.223.0    
+       - 185.1.223.0   
+       - 2001:7f8:b7::a504:1441:1
+       - 2001:7f8:b7::a504:1441:2
   
 AS13335:
     description: Cloudflare
