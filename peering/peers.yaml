@@ -17,6 +17,7 @@ AS6939:
     description: Hurricane Electric
     import: AS6939:AS-HURRICANE
     export: AS200132:AS-NETONE-NL
+    ipv6_limit: 250000
 
 AS212635:
     description: Jurrian van Iersel
