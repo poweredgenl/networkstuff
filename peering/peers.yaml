@@ -78,4 +78,9 @@ AS200232:
     description: CyberNBD-net
     import: AS200232:AS-CYBNET
     export: AS200132:AS-NETONE-NL
+    
+AS15562:
+    description: Job Snijders
+    import: AS15562:AS-SNIJDERS
+    export: AS200132:AS-NETONE-NL
 
