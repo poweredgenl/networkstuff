@@ -53,6 +53,8 @@ AS1103:
     description: SURF
     import: AS-SURFNET
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - speedix
     
 AS24940:
     description: Hetzner
