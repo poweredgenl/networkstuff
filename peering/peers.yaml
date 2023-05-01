@@ -86,3 +86,7 @@ AS15562:
     import: AS15562:AS-SNIJDERS
     export: AS200132:AS-NETONE-NL
 
+AS209643:
+    description: LOCIX NL Route Servers
+    import: AS-LOCIX
+    export: AS200132:AS-NETONE-NL
