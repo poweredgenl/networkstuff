@@ -31,7 +31,7 @@ AS212855:
 
 AS41441:
     description: Speed-IX Route Servers
-    import: AS-IX
+    import: AS41441:AS-IX
     export: AS200132:AS-NETONE-NL
     only_with:
        - 185.1.222.255
