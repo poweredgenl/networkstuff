@@ -90,3 +90,8 @@ AS209643:
     description: LOCIX NL Route Servers
     import: AS-LOCIX
     export: AS200132:AS-NETONE-NL
+
+AS1104:
+    description: Nikhef
+    import: AS1104:AS-NIKHEF
+    export: AS200132:AS-NETONE-NL
