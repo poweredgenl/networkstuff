@@ -95,3 +95,8 @@ AS1104:
     description: Nikhef
     import: AS1104:AS-NIKHEF
     export: AS200132:AS-NETONE-NL
+
+AS202427:
+    description: Ursin Filli
+    import: AS-FILLI
+    export: AS200132:AS-NETONE-NL
