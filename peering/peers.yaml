@@ -100,3 +100,8 @@ AS202427:
     description: Ursin Filli
     import: AS-FILLI
     export: AS200132:AS-NETONE-NL
+
+AS16278:
+    description: Accenture
+    import: AS16278:AS-SENTIALABS
+    export: AS200132:AS-NETONE-NL
