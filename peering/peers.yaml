@@ -112,3 +112,7 @@ AS24381:
     description: BGP.exchange Route Servers
     import: AS24381:AS-BGPEXCHANGE
     export: AS200132:AS-NETONE-NL
+    only_with:
+       - 100.66.43.254
+       - 2a0e:8f01:1000:11::1
+
