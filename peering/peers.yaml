@@ -105,3 +105,8 @@ AS16278:
     description: Accenture
     import: AS16278:AS-SENTIALABS
     export: AS200132:AS-NETONE-NL
+
+AS24381:
+    description: BGP.exchange Route Servers
+    import: AS24381:AS-BGPEXCHANGE
+    export: AS200132:AS-NETONE-NL
