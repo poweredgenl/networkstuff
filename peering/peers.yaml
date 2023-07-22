@@ -109,12 +109,16 @@ AS16278:
     export: AS200132:AS-NETONE-NL
 
 AS24381:
-    description: BGP.exchange Route Servers
-    import: AS24381:AS-BGPEXCHANGE
+    description: BGP.exchange RS
+    import: AS-BGPEXCHANGE-PEERS
     export: AS200132:AS-NETONE-NL
     only_with:
        - 100.66.43.254
        - 2a0e:8f01:1000:11::1
+       - 100.66.183.254
+       - 2a0e:8f01:1000:46::1
+       - 100.66.95.254
+       - 2a0e:8f01:1000:24::1
 
 AS204508:
     description: MLGT
