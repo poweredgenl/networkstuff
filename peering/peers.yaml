@@ -136,5 +136,5 @@ AS198276:
     
 AS25091:
     description: IP-Max SA
-    import: AS25091:AS-IP-MAX:AS-IP-MAX-V6
+    import: AS-IP-MAX:AS-IP-MAX-V6
     export: AS200132:AS-NETONE-NL
