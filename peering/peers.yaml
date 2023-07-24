@@ -133,3 +133,8 @@ AS198276:
     description: Jeroen Klaver
     import: AS198276:AS-HURKLA
     export: AS200132:AS-NETONE-NL
+    
+AS25091:
+    description: IP-Max SA
+    import: AS25091:AS-IP-MAX:AS-IP-MAX-V6
+    export: AS200132:AS-NETONE-NL
