@@ -138,3 +138,8 @@ AS25091:
     description: IP-Max SA
     import: AS-IP-MAX
     export: AS200132:AS-NETONE-NL
+
+AS213035:
+    description: Serverion
+    import: AS-SERVERION
+    export: AS200132:AS-NETONE-NL
