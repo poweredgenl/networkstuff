@@ -143,3 +143,10 @@ AS213035:
     description: Serverion
     import: AS-SERVERION
     export: AS200132:AS-NETONE-NL
+
+AS210312:
+    description: DaKnObNET
+    import: AS-SET-DNET
+    export: AS200132:AS-NETONE-NL
+
+
