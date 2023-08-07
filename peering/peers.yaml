@@ -149,4 +149,9 @@ AS210312:
     import: AS-SET-DNET
     export: AS200132:AS-NETONE-NL
 
+AS51088:
+    description: A2B Internet
+    import: AS51088:AS-A2B
+    export: AS200132:AS-NETONE-NL
+
 
