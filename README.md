@@ -2,10 +2,6 @@
 
 This readme describes all the specific network stuff im doing at the house or abroad.
 
-## Managing a 9HA network infrastructure as volunteer
-
-[ soon ! ]
-
 ## Routing a /24 PI for home usage 
 
 This readme is to document the setup of routing a /24 PI IP space towards my house via the internet
@@ -27,7 +23,18 @@ At home i have the availability of 2 different ISP's and internet feeds.
 
 ### New setup 10-03-2023
 
-Soon!
+As of this date - the PI space is routed via my own AS network. I requested a AS nr from RIPE to setup my own ISP/personal internet breakout. The principle stays the same as down below with using tunnels / routing across the 2 links mentioned above here - however now directly connected to my router in the default free zone.
+
+For all information on this project - see my NOC website at https://noc.netone.nl
+
+You can find:
+
+- Picture of the router - yeay :-)
+- Peerings active
+- BGP routes active
+- Updates im doing to the network
+- About section with history
+- A network weathermap graph on all current traffic volumes.
 
 ### Old setup 01-06-2022 - static routes and firewall from a friend
 
