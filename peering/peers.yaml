@@ -157,4 +157,9 @@ AS211993:
     import: AS211993
     export: AS200132:AS-NETONE-NL
 
+AS31477:
+    description: Duocast B.V.
+    import: AS31477:AS-DUOCAST
+    export: AS200132:AS-NETONE-NL
+
 
