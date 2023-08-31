@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# THis script is intended to be used with BIRD to generate a new filtering/validation file every hour and reload bird to see the changes. a must have for RPKI filtering.
+rpkiclient=/usr/sbin/rpki-client
+rpkioutputdir=/var/lib/rpki-client
+rpkiclient_opts="-b 195.95.177.1 -B"
+set -e
+
+[ -x "${rpkiclient}" ] || exit 1
+[ -d "${rpkioutputdir}" ] || mkdir "${rpkioutputdir}"
+
+# Perform RPKI ROA updates
+"${rpkiclient}" "${rpkiclient_opts}" "${rpkioutputdir}" >/dev/null 2>&1
+
+if [ "${?}" -eq 0 ]
+then
+        /usr/sbin/bird -pc /etc/bird/bird.conf >/dev/null 2>&1
+        if [ "${?}" -eq 0 ]
+        then
+                /usr/sbin/birdc configure
+                /usr/sbin/birdc6 configure
+        else
+                echo 'Error in Bird config after reconfig with new ROA file.' 1>&2
+                exit 3
+        fi
+else
+        echo 'Error in rpki-client update' 1>&2
+        exit 2
+fi
+# End script
