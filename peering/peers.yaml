@@ -162,4 +162,9 @@ AS31477:
     import: AS31477:AS-DUOCAST
     export: AS200132:AS-NETONE-NL
 
+AS56584:
+    description: INTERIX Route Servers
+    import: AS56584:AS-INTERIX
+    export: AS200132:AS-NETONE-NL
+
 
