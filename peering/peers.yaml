@@ -167,4 +167,9 @@ AS56584:
     import: AS56584:AS-INTERIX
     export: AS200132:AS-NETONE-NL
 
+AS47498:
+    description: FogIXP Route Servers
+    import: AS-FOGIXP
+    export: AS200132:AS-NETONE-NL
+
 
