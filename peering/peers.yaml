@@ -12,7 +12,9 @@ AS202585:
     description: Nick Bouwhuis
     import: AS202585:AS-NICK
     export: AS200132:AS-NETONE-NL
-
+    not_on:
+      - frysix
+      
 AS6939:
     description: Hurricane Electric
     import: AS6939:AS-HURRICANE
