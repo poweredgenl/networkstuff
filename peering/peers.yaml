@@ -75,6 +75,8 @@ AS200232:
     description: CyberNBD-net
     import: AS200232:AS-CYBNET
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - interix
     
 AS15562:
     description: Job Snijders
@@ -95,6 +97,8 @@ AS202427:
     description: Ursin Filli
     import: AS-FILLI
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - interix
 
 AS16278:
     description: Accenture
@@ -126,6 +130,8 @@ AS25091:
     description: IP-Max SA
     import: AS-IP-MAX
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - interix
 
 AS213035:
     description: Serverion
@@ -143,6 +149,8 @@ AS51088:
     description: A2B Internet
     import: AS51088:AS-A2B
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - interix
 
 AS211993:
     description: Soverin B.V.
