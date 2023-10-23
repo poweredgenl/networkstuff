@@ -149,8 +149,6 @@ AS51088:
     description: A2B Internet
     import: AS51088:AS-A2B
     export: AS200132:AS-NETONE-NL
-    not_on:
-      - interix
 
 AS211993:
     description: Soverin B.V.
