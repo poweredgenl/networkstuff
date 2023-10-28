@@ -71,13 +71,7 @@ AS16276:
     import: AS16276:AS-OVH
     export: AS200132:AS-NETONE-NL
 
-AS200232:
-    description: CyberNBD-net
-    import: AS200232:AS-CYBNET
-    export: AS200132:AS-NETONE-NL
-    not_on:
-      - interix
-    
+   
 AS15562:
     description: Job Snijders
     import: AS15562:AS-SNIJDERS
