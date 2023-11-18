@@ -164,4 +164,8 @@ AS47498:
     import: AS-FOGIXP
     export: AS200132:AS-NETONE-NL
 
+AS49917:
+    description: LayerswitchIX Route Servers
+    import: AS-LSC-IXP
+    export: AS200132:AS-NETONE-NL
 
