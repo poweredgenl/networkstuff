@@ -173,4 +173,7 @@ AS200149:
     description: Project NIX
     import: AS200149:AS-PROJECT-NIX
     export: AS200132:AS-NETONE-NL
+    only_with:
+       - 145.107.12.68
+       - 2001:67c:2f08:100::1:42
 
