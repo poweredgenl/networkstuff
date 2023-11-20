@@ -169,3 +169,8 @@ AS49917:
     import: AS-LSC-IXP
     export: AS200132:AS-NETONE-NL
 
+AS200149:
+    description: Project NIX
+    import: AS200149:AS-PROJECT-NIX
+    export: AS200132:AS-NETONE-NL
+
