@@ -177,3 +177,8 @@ AS200149:
        - 145.107.12.68
        - 2001:67c:2f08:100::1:42
 
+AS10310:
+    description: Yahoo Inc
+    import: AS-YAHOO
+    export: AS200132:AS-NETONE-NL
+
