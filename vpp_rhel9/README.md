@@ -8,7 +8,9 @@ Built on: RHEL 9.3 updated up to 01-12-2023. This version is with the native lin
 
 To install: (work in progress!)
 
-1 download
-2 dnf remove libibverbs-46.0-1.el9.x86_6
-3 dnf install libffi-devel net-tools python3-policycoreutils libpcap
-3 rpm -i vpp*.rpm
+- download
+- dnf remove libibverbs-46.0-1.el9.x86_6
+- wget https://rpmfind.net/linux/centos-stream/9-stream/BaseOS/x86_64/os/Packages/libpcap-1.10.0-4.el9.x86_64.rpm
+- rpm -Uvh libpcap-1.10.0-4.el9.x86_64.rpm --nodeps
+- dnf install libffi-devel net-tools python3-policycoreutils 
+- rpm -i vpp*.rpm
