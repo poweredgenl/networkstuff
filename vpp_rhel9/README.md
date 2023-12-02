@@ -15,7 +15,8 @@ To install: (work in progress!)
 - dnf install libffi-devel net-tools python3-policycoreutils 
 - rpm -i vpp*.rpm
 
-Configuration stuff
+
+## Configuration stuff (WIP!)
 
 THe driver to work with a vmxnet3 adapter needs to be loaded / either manually or at boot:
 
