@@ -14,3 +14,13 @@ To install: (work in progress!)
 - rpm -Uvh libpcap-1.10.0-4.el9.x86_64.rpm --nodeps
 - dnf install libffi-devel net-tools python3-policycoreutils 
 - rpm -i vpp*.rpm
+
+Configuration stuff
+
+THe driver to work with a vmxnet3 adapter needs to be loaded / either manually or at boot:
+
+- modprobe vfio-pci
+- ifconfig ens192 down # interface i want to control with VPP/LCPNG
+- Follow instructions at https://ipng.ch/s/articles/2021/12/23/vpp-playground.html to create a similar bootstrap file for adding your interface.
+
+I do recommend putting your ens192 in ignore mode for NetworkManager because its heavily conflicting with the setup of VPP.
