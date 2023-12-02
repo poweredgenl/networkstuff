@@ -24,8 +24,10 @@ THe driver to work with a vmxnet3 adapter needs to be loaded / either manually o
 - ifconfig ens192 down # interface i want to control with VPP/LCPNG
 - Disable / let NetworkManager ignore this interface as it conflicts with the bootstrap file in the next step.
 
-create a file (eg 'ignore') in /etc/NetworkManager/conf.d/ and add the following:
+create a file (eg 'ignore.conf') in /etc/NetworkManager/conf.d/ and add the following:
 
+[main]
+plugins=ifcfg-rh,keyfile
 [keyfile]
 unmanaged-devices=mac:00:11:22:33:44:55
   
