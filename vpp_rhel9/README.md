@@ -22,6 +22,13 @@ THe driver to work with a vmxnet3 adapter needs to be loaded / either manually o
 
 - modprobe vfio-pci
 - ifconfig ens192 down # interface i want to control with VPP/LCPNG
+- Disable / let NetworkManager ignore this interface as it conflicts with the bootstrap file in the next step.
+
+create a file (eg 'ignore') in /etc/NetworkManager/conf.d/ and add the following:
+
+[keyfile]
+unmanaged-devices=mac:00:11:22:33:44:55
+  
 - Follow instructions at https://ipng.ch/s/articles/2021/12/23/vpp-playground.html to create a similar bootstrap file for adding your interface.
 
-I do recommend putting your ens192 in ignore mode for NetworkManager because its heavily conflicting with the setup of VPP.
+
