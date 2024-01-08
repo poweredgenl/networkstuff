@@ -182,3 +182,8 @@ AS10310:
     import: AS-YAHOO
     export: AS200132:AS-NETONE-NL
 
+AS14061:
+    description: DigitalOcean
+    import: AS-14061
+    export: AS200132:AS-NETONE-NL
+
