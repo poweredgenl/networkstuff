@@ -187,3 +187,8 @@ AS14061:
     import: AS-14061
     export: AS200132:AS-NETONE-NL
 
+AS211358:
+    description: IPv6GO
+    import: AS-IPV6GO
+    export: AS200132:AS-NETONE-NL
+
