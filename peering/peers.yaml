@@ -192,3 +192,8 @@ AS211358:
     import: AS-IPV6GO
     export: AS200132:AS-NETONE-NL
 
+AS32934:
+    description: Meta
+    import: AS-FACEBOOK
+    export: AS200132:AS-NETONE-NL
+
