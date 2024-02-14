@@ -7,3 +7,7 @@ More information on AS200132 is on https://noc.netone.nl
 ## Procedure
 
 Very easy: make a pull request for the peers.yaml file, and i will approve it. I will then run the scripting to pick up the yaml file and the bgp configuration will be automatically generated at my router.
+
+# Peering with AS215495
+
+This is NetOne NL's testing network and you only need to make a pull request in this peering file unless requested by me.
