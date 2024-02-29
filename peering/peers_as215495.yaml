@@ -1,4 +1,4 @@
 AS56393:
     description: DUMMY
     import: AS-FRYS-IX-CONNECTED
-    export: AS200132:AS-NETONE-NL
+    export: AS215495
