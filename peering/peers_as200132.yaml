@@ -197,3 +197,8 @@ AS32934:
     import: AS-FACEBOOK
     export: AS200132:AS-NETONE-NL
 
+AS215887:
+    description: Baragoon Networks
+    import: AS215887:AS-BARA
+    export: AS200132:AS-NETONE-NL
+
