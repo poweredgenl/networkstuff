@@ -202,3 +202,8 @@ AS215887:
     import: AS215887:AS-BARA
     export: AS200132:AS-NETONE-NL
 
+AS34307:
+    description: NL-IX Route Servers
+    import: AS-NL-IX-RS
+    export: AS200132:AS-NETONE-NL
+
