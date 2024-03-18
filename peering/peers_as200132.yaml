@@ -23,6 +23,8 @@ AS212855:
     description: Jelle Luteijn
     import: AS212855:AS-LUJE
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - nlix
 
 AS41441:
     description: Speed-IX Route Servers
@@ -99,18 +101,6 @@ AS16278:
     import: AS16278:AS-SENTIALABS
     export: AS200132:AS-NETONE-NL
 
-#AS24381:
-#    description: BGP.exchange RS
-#    import: AS-BGPEXCHANGE-PEERS
-#    export: AS200132:AS-NETONE-NL
-#    only_with:
-#       - 100.66.43.254
-#       - 2a0e:8f01:1000:11::1
-#       - 100.66.183.254
-#       - 2a0e:8f01:1000:46::1
-#       - 100.66.95.254
-#       - 2a0e:8f01:1000:24::1
-
 AS204508:
     description: MLGT
     import: AS-MLGT
@@ -169,13 +159,13 @@ AS49917:
     import: AS-LSC-IXP
     export: AS200132:AS-NETONE-NL
 
-AS200149:
-    description: Project NIX
-    import: AS200149:AS-PROJECT-NIX
-    export: AS200132:AS-NETONE-NL
-    only_with:
-       - 145.107.12.68
-       - 2001:67c:2f08:100::1:42
+#AS200149:
+#    description: Project NIX
+#    import: AS200149:AS-PROJECT-NIX
+#    export: AS200132:AS-NETONE-NL
+#    only_with:
+#       - 145.107.12.68
+#       - 2001:67c:2f08:100::1:42
 
 AS10310:
     description: Yahoo Inc
