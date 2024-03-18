@@ -207,3 +207,8 @@ AS34307:
     import: AS-NL-IX-RS
     export: AS200132:AS-NETONE-NL
 
+AS49544:
+    description: Interactive 3D
+    import: AS-INTERACTIVE3D
+    export: AS200132:AS-NETONE-NL
+
