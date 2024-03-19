@@ -171,6 +171,8 @@ AS10310:
     description: Yahoo Inc
     import: AS-YAHOO
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - nlix
 
 AS14061:
     description: DigitalOcean
