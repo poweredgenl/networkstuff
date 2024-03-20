@@ -95,6 +95,7 @@ AS202427:
     export: AS200132:AS-NETONE-NL
     not_on:
       - interix
+      - nlix
 
 AS16278:
     description: Accenture
@@ -128,6 +129,8 @@ AS210312:
     description: DaKnObNET
     import: AS-SET-DNET
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - nlix
 
 AS51088:
     description: A2B Internet
@@ -183,6 +186,8 @@ AS211358:
     description: IPv6GO
     import: AS-IPV6GO
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - nlix
 
 AS32934:
     description: Meta
@@ -202,5 +207,10 @@ AS34307:
 AS49544:
     description: Interactive 3D
     import: AS-INTERACTIVE3D
+    export: AS200132:AS-NETONE-NL
+
+AS20940:
+    description: Akamai Technologies
+    import: AS-AKAMAI
     export: AS200132:AS-NETONE-NL
 
