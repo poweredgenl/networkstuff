@@ -214,3 +214,9 @@ AS20940:
     import: AS-AKAMAI
     export: AS200132:AS-NETONE-NL
 
+AS14907:
+    description: Wikimedia
+    import: AS-WIKIMEDIA
+    export: AS200132:AS-NETONE-NL
+
+
