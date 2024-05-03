@@ -228,3 +228,8 @@ AS714:
     description: Apple Inc
     import: AS-APPLE
     export: AS200132:AS-NETONE-NL
+
+AS6206:
+    description: Netrouting
+    import: AS-NETROUTING
+    export: AS200132:AS-NETONE-NL
