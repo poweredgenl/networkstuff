@@ -137,10 +137,10 @@ AS51088:
     import: AS51088:AS-A2B
     export: AS200132:AS-NETONE-NL
 
-AS211993:
-    description: Soverin B.V.
-    import: AS211993
-    export: AS200132:AS-NETONE-NL
+#AS211993:
+#    description: Soverin B.V.
+#    import: AS211993
+#    export: AS200132:AS-NETONE-NL
 
 AS31477:
     description: Duocast B.V.
