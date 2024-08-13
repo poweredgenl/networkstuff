@@ -238,3 +238,8 @@ AS34019:
     description: Hivane
     import: AS34019:AS-HIVANE
     export: AS200132:AS-NETONE-NL
+
+AS54825:
+    description: Equinix Metal
+    import: AS-PACKET
+    export: AS200132:AS-NETONE-NL
