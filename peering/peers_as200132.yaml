@@ -24,7 +24,8 @@ AS212855:
     import: AS212855:AS-LUJE
     export: AS200132:AS-NETONE-NL
     not_on:
-      - nlix
+      - speedix
+      - frysix
 
 AS41441:
     description: Speed-IX Route Servers
