@@ -249,3 +249,8 @@ AS45102:
     description: AliBaba CDN
     import: AS-ALIBABA-CN-NET
     export: AS200132:AS-NETONE-NL
+
+AS215956:
+    description: MyIP
+    import: AS215956:AS-MYIP
+    export: AS200132:AS-NETONE-NL
