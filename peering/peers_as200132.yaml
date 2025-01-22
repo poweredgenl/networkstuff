@@ -155,6 +155,8 @@ AS31477:
     description: Duocast B.V.
     import: AS31477:AS-DUOCAST
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - nlix
 
 AS56584:
     description: INTERIX Route Servers
@@ -250,6 +252,8 @@ AS34019:
     description: Hivane
     import: AS34019:AS-HIVANE
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - speedix
 
 AS54825:
     description: Equinix Metal
@@ -270,6 +274,8 @@ AS215296:
     description: Raoul Brouns
     import: AS215296:AS-RAOULBROUNS
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - nlix
 
 AS207176:
     description: OpenFiber NL
