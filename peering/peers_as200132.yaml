@@ -94,6 +94,9 @@ AS1104:
     description: Nikhef
     import: AS1104:AS-NIKHEF
     export: AS200132:AS-NETONE-NL
+    only_with:
+      - 185.1.203.182
+      - 2001:7f8:10f::450:182
 
 AS202427:
     description: Ursin Filli
@@ -103,10 +106,10 @@ AS202427:
       - interix
       - nlix
 
-AS16278:
-    description: Accenture
-    import: AS16278:AS-SENTIALABS
-    export: AS200132:AS-NETONE-NL
+#AS16278:
+#    description: Accenture
+#    import: AS16278:AS-SENTIALABS
+#    export: AS200132:AS-NETONE-NL
 
 AS204508:
     description: MLGT
