@@ -242,6 +242,9 @@ AS6206:
     description: Netrouting
     import: AS-NETROUTING
     export: AS200132:AS-NETONE-NL
+    only_with:
+      - 2001:7f8:10f::183e:230
+      - 185.1.203.230
 
 AS34019:
     description: Hivane
