@@ -53,6 +53,11 @@ AS1103:
     export: AS200132:AS-NETONE-NL
     not_on:
       - speedix
+    only_with:
+      - 185.1.203.232
+      - 185.1.203.38
+      - 2001:7f8:10f::44f:232
+      - 2001:7f8:10f::44f:38
     
 AS24940:
     description: Hetzner
