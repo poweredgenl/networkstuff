@@ -106,10 +106,10 @@ AS202427:
       - interix
       - nlix
 
-#AS16278:
-#    description: Accenture
-#    import: AS16278:AS-SENTIALABS
-#    export: AS200132:AS-NETONE-NL
+AS16278:
+    description: Accenture
+    import: AS16278:AS-SENTIALABS
+    export: AS200132:AS-NETONE-NL
 
 AS204508:
     description: MLGT
