@@ -281,3 +281,8 @@ AS207176:
     description: OpenFiber NL
     import: AS-OPENFIBER
     export: AS200132:AS-NETONE-NL
+
+AS58065:
+    description: Packet Exchange
+    import: AS-PX9
+    export: AS200132:AS-NETONE-NL
