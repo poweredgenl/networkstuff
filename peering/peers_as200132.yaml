@@ -106,11 +106,6 @@ AS202427:
       - interix
       - nlix
 
-AS16278:
-    description: Accenture
-    import: AS16278:AS-SENTIALABS
-    export: AS200132:AS-NETONE-NL
-
 AS204508:
     description: MLGT
     import: AS-MLGT
@@ -192,6 +187,8 @@ AS14061:
     description: DigitalOcean
     import: AS-14061
     export: AS200132:AS-NETONE-NL
+    not-on:
+      - nlix
 
 AS211358:
     description: IPv6GO
