@@ -288,3 +288,8 @@ AS30132:
     description: ISC F-ROOT
     import: AS-FROOT
     export: AS200132:AS-NETONE-NL
+
+AS215248:
+    description: Bastiaan Brink
+    import: AS215248:AS-BASTIAANBRINK
+    export: AS200132:AS-NETONE-NL
