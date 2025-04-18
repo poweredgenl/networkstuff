@@ -46,6 +46,8 @@ AS15169:
     description: Google 
     import: AS-GOOGLE
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - amsix
       
 AS1103:
     description: SURF
@@ -306,4 +308,9 @@ AS6777:
 AS8966:
     description: Emirates Internet Exchange
     import: AS-EMIX
+    export: AS200132:AS-NETONE-NL
+
+AS49870:
+    description: Alsycon B.V
+    import: AS-49870
     export: AS200132:AS-NETONE-NL
