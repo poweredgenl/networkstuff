@@ -302,3 +302,8 @@ AS6777:
     description: AMS-IX Route Servers
     import: AS6777:AS-AMS-IX-RS AS6777:AS-AMS-IX-RS-V6 AS6777:AS-AMS-IX-RS-SETS AS6777:AS-AMS-IX-RS-SETS-V6
     export: AS200132:AS-NETONE-NL
+
+AS8966:
+    description: Emirates Internet Exchange
+    import: AS-EMIX
+    export: AS200132:AS-NETONE-NL
