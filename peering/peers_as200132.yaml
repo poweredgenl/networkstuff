@@ -314,3 +314,8 @@ AS49870:
     description: Alsycon B.V
     import: AS-49870
     export: AS200132:AS-NETONE-NL
+
+AS62044:
+    description: Zscaler EMEA
+    import: AS-ZSCALER-EMEA
+    export: AS200132:AS-NETONE-NL
