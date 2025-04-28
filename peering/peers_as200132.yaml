@@ -319,3 +319,8 @@ AS62044:
     description: Zscaler EMEA
     import: AS-ZSCALER-EMEA
     export: AS200132:AS-NETONE-NL
+
+AS25220:
+    description: Global NOC
+    import: AS-GLOBALNOC
+    export: AS200132:AS-NETONE-NL
