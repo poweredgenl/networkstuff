@@ -126,6 +126,7 @@ AS25091:
     export: AS200132:AS-NETONE-NL
     not_on:
       - interix
+      - amsix
 
 AS213035:
     description: Serverion
@@ -157,6 +158,7 @@ AS31477:
     export: AS200132:AS-NETONE-NL
     not_on:
       - nlix
+      - amsix
 
 AS56584:
     description: INTERIX Route Servers
@@ -221,6 +223,8 @@ AS49544:
     description: Interactive 3D
     import: AS-INTERACTIVE3D
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - layerswitchix
 
 AS20940:
     description: Akamai Technologies
@@ -314,6 +318,8 @@ AS49870:
     description: Alsycon B.V
     import: AS-49870
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - interix
 
 AS62044:
     description: Zscaler EMEA
