@@ -330,3 +330,8 @@ AS25220:
     description: Global NOC
     import: AS-GLOBALNOC
     export: AS200132:AS-NETONE-NL
+
+AS1828:
+    description: PacketFabric
+    import: AS-UNITAS
+    export: AS200132:AS-NETONE-NL
