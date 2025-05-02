@@ -277,13 +277,6 @@ AS215956:
     import: AS215956:AS-MYIP
     export: AS200132:AS-NETONE-NL
 
-AS215296:
-    description: Raoul Brouns
-    import: AS215296:AS-RAOULBROUNS
-    export: AS200132:AS-NETONE-NL
-    not_on:
-      - nlix
-
 AS207176:
     description: OpenFiber NL
     import: AS-OPENFIBER
@@ -297,11 +290,6 @@ AS58065:
 AS30132:
     description: ISC F-ROOT
     import: AS-FROOT
-    export: AS200132:AS-NETONE-NL
-
-AS215248:
-    description: Bastiaan Brink
-    import: AS215248:AS-BASTIAANBRINK
     export: AS200132:AS-NETONE-NL
 
 AS6777:
