@@ -323,3 +323,19 @@ AS1828:
     description: PacketFabric
     import: AS-UNITAS
     export: AS200132:AS-NETONE-NL
+
+AS137933:
+    description: EVIX Route server 1
+    import: AS-EVIX
+    export: AS200132:AS-NETONE-NL
+    only_with:
+      - 206.81.104.1
+      - 2602:fed2:fff:ffff::1
+
+AS209762:
+    description: EVIX Route server 2
+    import: AS-EVIX
+    export: AS200132:AS-NETONE-NL
+    only_with:
+      - 206.81.104.253
+      - 2602:fed2:fff:ffff::253
