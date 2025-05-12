@@ -323,3 +323,8 @@ AS1828:
     description: PacketFabric
     import: AS-UNITAS
     export: AS200132:AS-NETONE-NL
+
+AS42184:
+    description: TKRZ Stadtwerke GmbH
+    import: AS-TKRZ
+    export: AS200132:AS-NETONE-NL
