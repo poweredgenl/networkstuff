@@ -175,14 +175,6 @@ AS49917:
     import: AS-LSC-IXP
     export: AS200132:AS-NETONE-NL
 
-#AS200149:
-#    description: Project NIX
-#    import: AS200149:AS-PROJECT-NIX
-#    export: AS200132:AS-NETONE-NL
-#    only_with:
-#       - 145.107.12.68
-#       - 2001:67c:2f08:100::1:42
-
 AS10310:
     description: Yahoo Inc
     import: AS-YAHOO
@@ -323,3 +315,19 @@ AS42184:
     description: TKRZ Stadtwerke GmbH
     import: AS-TKRZ
     export: AS200132:AS-NETONE-NL
+
+AS137933:
+    description: EVIX Route server US
+    import: AS137933
+    export: AS200132:AS-NETONE-NL
+    only_with:
+      - 2602:fed2:fff:ffff::1
+      - 206.81.104.1
+
+AS209762:
+    description: EVIX Route server NL
+    import: AS209762
+    export: AS200132:AS-NETONE-NL
+    only_with:
+      - 2602:fed2:fff:ffff::253
+      - 206.81.104.253
