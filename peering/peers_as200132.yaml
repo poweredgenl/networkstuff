@@ -213,7 +213,7 @@ AS49544:
     import: AS-INTERACTIVE3D
     export: AS200132:AS-NETONE-NL
     not_on:
-      - layerswitchix
+      - lsix
 
 AS20940:
     description: Akamai Technologies
