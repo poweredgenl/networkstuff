@@ -146,11 +146,8 @@ AS51088:
     description: A2B Internet
     import: AS51088:AS-A2B
     export: AS200132:AS-NETONE-NL
-
-#AS211993:
-#    description: Soverin B.V.
-#    import: AS211993
-#    export: AS200132:AS-NETONE-NL
+    not_on:
+      - amsix
 
 AS31477:
     description: Duocast B.V.
@@ -253,6 +250,8 @@ AS54825:
     description: Equinix Metal
     import: AS-PACKET
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - amsix
 
 AS45102:
     description: AliBaba CDN
