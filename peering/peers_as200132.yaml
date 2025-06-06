@@ -26,6 +26,7 @@ AS212855:
     not_on:
       - speedix
       - frysix
+      - frysix2
 
 AS41441:
     description: Speed-IX Route Servers
