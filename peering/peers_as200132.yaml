@@ -186,6 +186,7 @@ AS14061:
     export: AS200132:AS-NETONE-NL
     not-on:
       - nlix
+      - frysix
 
 AS211358:
     description: IPv6GO
