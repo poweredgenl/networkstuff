@@ -338,3 +338,8 @@ AS8309:
     description: Sipartech SAS
     import: AS-SPH
     export: AS200132:AS-NETONE-NL
+
+AS215473:
+    description: Elimalko Saado
+    import: AS215473:AS-ALL
+    export: AS200132:AS-NETONE-NL
