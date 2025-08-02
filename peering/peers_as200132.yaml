@@ -343,3 +343,8 @@ AS215473:
     description: Elimalko Saado
     import: AS215473:AS-ALL
     export: AS200132:AS-NETONE-NL
+
+AS199471:
+    description: Marcel Straub (S5B)
+    import: AS199471:AS-S5B
+    export: AS200132:AS-NETONE-NL
