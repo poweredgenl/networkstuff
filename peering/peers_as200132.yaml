@@ -23,10 +23,6 @@ AS212855:
     description: Jelle Luteijn
     import: AS212855:AS-LUJE
     export: AS200132:AS-NETONE-NL
-    not_on:
-      - speedix
-      - frysix
-      - frysix2
 
 AS41441:
     description: Speed-IX Route Servers
