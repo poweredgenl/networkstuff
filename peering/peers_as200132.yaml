@@ -340,3 +340,8 @@ AS213576:
     description: Rob Weir
     import: AS213576:AS-ALL
     export: AS200132:AS-NETONE-NL
+
+AS31561:
+    description: Nine-IX Route Servers
+    import: AS31561:AS-MEMBERS
+    export: AS200132:AS-NETONE-NL
