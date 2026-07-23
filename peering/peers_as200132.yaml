@@ -21,6 +21,8 @@ AS212635:
     description: Jurrian van Iersel
     import: AS212635:AS-212635
     export: AS200132:AS-NETONE-NL
+    not_on:
+      - evix
 
 AS212855:
     description: Jelle Luteijn
