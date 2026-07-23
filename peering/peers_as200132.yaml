@@ -13,6 +13,9 @@ AS6939:
     import: AS6939:AS-HURRICANE
     export: AS200132:AS-NETONE-NL
     ipv6_limit: 250000
+    not_on:
+      - interix
+    
 
 AS212635:
     description: Jurrian van Iersel
@@ -131,6 +134,7 @@ AS213035:
     export: AS200132:AS-NETONE-NL
     not_on:
       - interix
+      - frysix
 
 AS210312:
     description: DaKnObNET
@@ -284,6 +288,7 @@ AS49870:
     export: AS200132:AS-NETONE-NL
     not_on:
       - interix
+      - frysix
 
 AS62044:
     description: Zscaler EMEA
@@ -344,4 +349,9 @@ AS213576:
 AS31561:
     description: Nine-IX Route Servers
     import: AS31561:AS-MEMBERS
+    export: AS200132:AS-NETONE-NL
+
+AS216456:
+    description: DCENT
+    import: AS216456:AS-DCENT
     export: AS200132:AS-NETONE-NL
