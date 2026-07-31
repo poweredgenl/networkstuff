@@ -316,6 +316,7 @@ AS137933:
     description: EVIX Route server US
     import: AS137933
     export: AS200132:AS-NETONE-NL
+    ipv6_limit: 2500
     only_with:
       - 2602:fed2:fff:ffff::1
       - 206.81.104.1
@@ -324,6 +325,7 @@ AS209762:
     description: EVIX Route server NL
     import: AS209762
     export: AS200132:AS-NETONE-NL
+    ipv6_limit: 2500
     only_with:
       - 2602:fed2:fff:ffff::253
       - 206.81.104.253
