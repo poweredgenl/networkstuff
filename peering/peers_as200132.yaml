@@ -376,3 +376,8 @@ AS35708:
       - 2001:7f8:d0::8b7c:1
       - 2001:7f8:d0::8b7c:2
       - 2001:7f8:d0::8b7c:3
+
+AS203291:
+    description: Fryslan L3
+    import: AS203291
+    export: AS200132:AS-NETONE-NL
