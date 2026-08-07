@@ -190,14 +190,6 @@ AS14061:
       - nlix
       - frysix
 
-AS211358:
-    description: IPv6GO
-    import: AS-IPV6GO
-    export: AS200132:AS-NETONE-NL
-    not_on:
-      - nlix
-      - evix
-
 AS32934:
     description: Meta
     import: AS-FACEBOOK
