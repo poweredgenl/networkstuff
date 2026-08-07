@@ -379,5 +379,5 @@ AS35708:
 
 AS203291:
     description: Fryslan L3
-    import: AS203291
+    import: AS203291:AS-MEMBERS
     export: AS200132:AS-NETONE-NL
