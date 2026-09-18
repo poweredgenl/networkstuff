@@ -373,3 +373,8 @@ AS203291:
     description: Fryslan L3
     import: AS203291:AS-MEMBERS
     export: AS200132:AS-NETONE-NL
+
+AS49685:
+    description: Signet / IT-Ernity Internet
+    import: AS49685:AS-ALL
+    export: AS200132:AS-NETONE-NL
