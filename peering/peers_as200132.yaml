@@ -378,3 +378,8 @@ AS49685:
     description: Signet / IT-Ernity Internet
     import: AS49685:AS-ALL
     export: AS200132:AS-NETONE-NL
+
+AS218511:
+    description: Coloclue-IX
+    import: AS218511:AS-CLUE-IX
+    export: AS200132:AS-NETONE-NL
