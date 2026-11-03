@@ -385,6 +385,7 @@ AS218511:
     description: Coloclue-IX
     import: AS218511:AS-CLUE-IX
     export: AS200132:AS-NETONE-NL
+    gtsm: true
 
 AS218506:
     description: Siekman Network
