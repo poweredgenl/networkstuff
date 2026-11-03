@@ -391,3 +391,11 @@ AS218506:
     description: Siekman Network
     import: AS218506:AS-SIEKMAN
     export: AS200132:AS-NETONE-NL
+
+AS197754:
+    description: Christiaan Goossens
+    import: AS197754:AS-CHRGNL
+    export: AS200132:AS-NETONE-NL
+    on:
+      - frysix
+      - speedix
