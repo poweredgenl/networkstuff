@@ -401,3 +401,10 @@ AS197754:
     on:
       - frysix
       - speedix
+
+AS200020:
+    description: Stichting Nationale Beheersorganisatie Internet Providers (NBIP)
+    import: AS-NBIP AS-NBIP6
+    export: AS200132:AS-NETONE-NL
+    on:
+      - amsix
